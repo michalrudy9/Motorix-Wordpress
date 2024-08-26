@@ -1,0 +1,15 @@
+# .DS_Store
+.DS_Store
+
+# Other
+/vendor
+/node_modules
+/config/db.php
+.env
+.vscode
+
+# Themes
+
+wp-content/themes/twentytwentyfour
+wp-content/themes/twentytwentythree
+wp-content/themes/twentytwentytwo
