@@ -19,6 +19,13 @@ function no_admin_bar(): void
     }
 }
 
+function load_fonts(): void
+{
+    wp_enqueue_style('dm_sans_font', 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    wp_enqueue_style('roboto_font', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
 add_action('init', 'register_new_block_type');
 add_action('wp_enqueue_scripts', 'attach_files');
 add_action('wp_loaded', 'no_admin_bar');
+add_action('login_enqueue_scripts', 'load_fonts');

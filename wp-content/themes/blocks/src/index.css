@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+    @apply box-border text-color-text font-dm-sans text-[1rem] not-italic font-normal leading-[1.68rem] mb-4 outline-color-text break-words;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply box-border text-dark font-roboto font-medium mb-3 mt-6 outline-dark break-words decoration-dark decoration-solid 
+}
+
+h1 {
+    @apply text-[2rem] leading-9
+}
+
+h2 {
+    @apply text-[1.625rem] leading-7
+}
+
+h3 {
+    @apply text-[1.375rem] leading-6
+}
+
+h4 {
+    @apply text-xl
+}
+
+h5 {
+    @apply text-lg
+}
+
+h6 {
+    @apply text-[1.063rem] leading-[1.188rem]
+}
+
+a {
+    @apply box-border text-link font-dm-sans text-[1rem] font-normal outline-link break-words decoration-link decoration-solid delay-0 duration-[.3s] ease-in-out
+}
+
+.trx_addons_accent_bg {
+    @apply bg-dark font-dm-sans text-white p-[0.4rem]
+}
+
+.trx_addons_dropcap_style_2 {
+    @apply text-dark float-left font-roboto text-[2.938rem] h-[2.813rem] leading-9 min-w-[3.438rem] break-words pr-1 text-left
+}
+
+.trx_addons_dropcap_style_1 {
+    @apply bg-link2 box-border text-inverse-link float-left font-roboto text-[2.625rem] h-[3.75rem] leading-[3.5rem] mr-[0.788rem] mt-[0.394rem] outline-inverse-link break-words text-center w-[3.75rem]
+}
+
+blockquote {
+    @apply bg-slate-500;
+
+    p {
+        @apply bg-red-500 text-2xl
+    }
+}
