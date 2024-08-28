@@ -49,11 +49,3 @@ a {
 .trx_addons_dropcap_style_1 {
     @apply bg-link2 box-border text-inverse-link float-left font-roboto text-[2.625rem] h-[3.75rem] leading-[3.5rem] mr-[0.788rem] mt-[0.394rem] outline-inverse-link break-words text-center w-[3.75rem]
 }
-
-blockquote {
-    @apply bg-slate-500;
-
-    p {
-        @apply bg-red-500 text-2xl
-    }
-}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel wpstart tailwindwatch",
+    "start": "npm-run-all --parallel wpstart blocks tailwindwatch",
     "wpstart": "wp-scripts start src/index",
     "blocks": "wp-scripts start --experimental-modules",
     "build": "run-s buildIndex buildBlocks ",
