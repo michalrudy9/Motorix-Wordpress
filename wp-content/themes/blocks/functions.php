@@ -8,6 +8,7 @@ function register_new_block_type(): void
 function attach_files(): void
 {
     wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
+    wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 
 function no_admin_bar(): void

@@ -13,6 +13,8 @@ module.exports = {
         link: "#F56E21",
         link2: "#0A83FF",
         "inverse-link": "#F8F8F8",
+        "color-text-2": "#D2D3D5",
+        "text-dark": "#FCFCFC",
       },
     },
   },
