@@ -18,7 +18,9 @@ wp-content/themes/twentytwentytwo
 # node_modules
 
 wp-content/themes/blocks/node_modules
+wp-content/themes/react-theme/node_modules
 
 #builds
 
 wp-content/themes/blocks/build
+wp-content/themes/react-theme/build
