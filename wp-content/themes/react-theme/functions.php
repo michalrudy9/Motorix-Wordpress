@@ -19,6 +19,15 @@ function boilerplate_add_support(): void
   add_theme_support('post-thumbnails');
 }
 
+function enqueue_scripts()
+{
+  wp_enqueue_script('mian-script', get_template_directory_uri() . '/build/index.js', array(), '1.0', true);
+  wp_localize_script('mian-script', 'wp_data', [
+    'home_url' => esc_url(home_url()),
+  ]);
+}
+
 add_action('wp_enqueue_scripts', 'load_assets');
 add_action('after_setup_theme', 'boilerplate_add_support');
 add_action('login_enqueue_scripts', 'load_fonts');
+add_action('wp_enqueue_scripts', 'enqueue_scripts');
